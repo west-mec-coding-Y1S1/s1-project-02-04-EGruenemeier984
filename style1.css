@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 html {
-    background-color: white;
+    background-color: beige;
 }
 
 * {
@@ -14,7 +14,6 @@ body {
     min-width: 320px;
     background-color: white;
     font-family: 'Muli', sans-serif;
-    font-size: .85vw;
 }
 
 h1 {
@@ -23,7 +22,7 @@ h1 {
 }
 
 .wrapper {
-    width: 1500px;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -32,6 +31,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
+    border: 2px solid black;
 }
 
 footer {
@@ -64,19 +64,23 @@ footer {
     background-color: rgb(43, 43, 47);
     float: left;
     width: 20%;
-    padding: 15px;
-    margin-top: 7px;
+    height: 20%;
     text-align: center;
     color: white;
 }
 
-a[href^="mailto"],[href^="tel"]{
-    color: white; 
+.bottom h2 {
+    text-align: center;
+}
+
+a[href^="mailto"],
+[href^="tel"] {
+    color: white;
     text-decoration: none;
 }
 
-a:hover{
-    color: white; 
+a:hover {
+    color: white;
     text-decoration: underline;
 }
 
