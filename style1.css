@@ -1,6 +1,11 @@
 @charset "utf-8";
+
 html {
     background-color: white;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -9,6 +14,7 @@ body {
     min-width: 320px;
     background-color: white;
     font-family: 'Muli', sans-serif;
+    font-size: .85vw;
 }
 
 h1 {
@@ -32,35 +38,53 @@ footer {
     text-align: center;
 }
 
-.topnav {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #20227F;
-}
-
-ul.topnav li a {
-    display: block;
-    color: white;
+.menu {
+    float: left;
+    width: 20%;
     text-align: center;
-    padding: 12px;
+}
+
+.menu a {
+    background-color: rgb(43, 43, 47);
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: white;
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {
-    background-color: #101140;
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.right {
+    background-color: rgb(43, 43, 47);
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+    color: white;
+}
+
+a[href^="mailto"],[href^="tel"]{
+    color: white; 
+    text-decoration: none;
+}
+
+a:hover{
+    color: white; 
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
-    ul.topnav li.right,
-    ul.topnav li {
-        float: none;
+
+    .menu,
+    .main,
+    .right {
+        width: 100%;
     }
 }
